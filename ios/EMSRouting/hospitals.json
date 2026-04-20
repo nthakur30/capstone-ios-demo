@@ -1,0 +1,752 @@
+[
+  {
+    "id": "HOSP049",
+    "name": "North County Hospital",
+    "lat": 34.87118,
+    "lng": -80.34245,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 25,
+    "ed_current_patients": 25
+  },
+  {
+    "id": "HOSP043",
+    "name": "Central County Hospital",
+    "lat": 35.34266,
+    "lng": -80.18078,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 34,
+    "ed_current_patients": 34
+  },
+  {
+    "id": "HOSP037",
+    "name": "East Valley Hospital",
+    "lat": 34.91626,
+    "lng": -79.89286,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 38,
+    "ed_current_patients": 38
+  },
+  {
+    "id": "HOSP028",
+    "name": "South City Hospital",
+    "lat": 34.90189,
+    "lng": -80.35569,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 32,
+    "ed_current_patients": 32
+  },
+  {
+    "id": "HOSP024",
+    "name": "North Regional Hospital",
+    "lat": 35.14511,
+    "lng": -79.75044,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 10,
+    "ed_current_patients": 10
+  },
+  {
+    "id": "HOSP020",
+    "name": "Central City Hospital",
+    "lat": 35.0483,
+    "lng": -79.96366,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 45,
+    "ed_current_patients": 45
+  },
+  {
+    "id": "HOSP025",
+    "name": "South Valley Hospital",
+    "lat": 34.54494,
+    "lng": -80.46571,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 16,
+    "ed_current_patients": 16
+  },
+  {
+    "id": "HOSP010",
+    "name": "Central General Hospital",
+    "lat": 35.17217,
+    "lng": -80.2943,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 36,
+    "ed_current_patients": 36
+  },
+  {
+    "id": "HOSP001",
+    "name": "North General Hospital",
+    "lat": 34.86495,
+    "lng": -80.06492,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 13,
+    "ed_current_patients": 13
+  },
+  {
+    "id": "HOSP014",
+    "name": "West Memorial Hospital",
+    "lat": 34.5993,
+    "lng": -79.97646,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": false,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 25,
+    "ed_current_patients": 25
+  },
+  {
+    "id": "HOSP027",
+    "name": "East Memorial Hospital",
+    "lat": 34.62806,
+    "lng": -80.19185,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 32,
+    "ed_current_patients": 32
+  },
+  {
+    "id": "HOSP036",
+    "name": "West General Hospital",
+    "lat": 34.84799,
+    "lng": -79.81347,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 23,
+    "ed_current_patients": 23
+  },
+  {
+    "id": "HOSP038",
+    "name": "East Regional Hospital",
+    "lat": 34.77498,
+    "lng": -80.44845,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 46,
+    "ed_current_patients": 46
+  },
+  {
+    "id": "HOSP004",
+    "name": "Central City Hospital",
+    "lat": 35.45547,
+    "lng": -80.44829,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 27,
+    "ed_current_patients": 27
+  },
+  {
+    "id": "HOSP012",
+    "name": "North City Hospital",
+    "lat": 34.80362,
+    "lng": -79.91772,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 14,
+    "ed_current_patients": 14
+  },
+  {
+    "id": "HOSP005",
+    "name": "Central County Hospital",
+    "lat": 34.57469,
+    "lng": -80.32766,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 27,
+    "ed_current_patients": 27
+  },
+  {
+    "id": "HOSP023",
+    "name": "West City Hospital",
+    "lat": 35.42508,
+    "lng": -79.68144,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 12,
+    "ed_current_patients": 12
+  },
+  {
+    "id": "HOSP011",
+    "name": "East Valley Hospital",
+    "lat": 35.18381,
+    "lng": -80.11232,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 16,
+    "ed_current_patients": 16
+  },
+  {
+    "id": "HOSP031",
+    "name": "East Unity Hospital",
+    "lat": 35.01739,
+    "lng": -80.00859,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 17,
+    "ed_current_patients": 17
+  },
+  {
+    "id": "HOSP026",
+    "name": "East Heights Hospital",
+    "lat": 34.8124,
+    "lng": -80.09103,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 40,
+    "ed_current_patients": 40
+  },
+  {
+    "id": "HOSP008",
+    "name": "North River Hospital",
+    "lat": 35.36406,
+    "lng": -80.11128,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 49,
+    "ed_current_patients": 49
+  },
+  {
+    "id": "HOSP018",
+    "name": "North Heights Hospital",
+    "lat": 35.49263,
+    "lng": -79.69969,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 27,
+    "ed_current_patients": 27
+  },
+  {
+    "id": "HOSP032",
+    "name": "Central Valley Hospital",
+    "lat": 34.54479,
+    "lng": -80.06785,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 18,
+    "ed_current_patients": 18
+  },
+  {
+    "id": "HOSP033",
+    "name": "West Liberty Hospital",
+    "lat": 35.14949,
+    "lng": -80.20576,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 17,
+    "ed_current_patients": 17
+  },
+  {
+    "id": "HOSP047",
+    "name": "South City Hospital",
+    "lat": 34.93461,
+    "lng": -79.88993,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 23,
+    "ed_current_patients": 23
+  },
+  {
+    "id": "HOSP041",
+    "name": "Central Liberty Hospital",
+    "lat": 35.25186,
+    "lng": -80.30829,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 14,
+    "ed_current_patients": 14
+  },
+  {
+    "id": "HOSP013",
+    "name": "West General Hospital",
+    "lat": 35.16796,
+    "lng": -79.51329,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 37,
+    "ed_current_patients": 37
+  },
+  {
+    "id": "HOSP009",
+    "name": "West Regional Hospital",
+    "lat": 35.41946,
+    "lng": -79.71919,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 31,
+    "ed_current_patients": 31
+  },
+  {
+    "id": "HOSP016",
+    "name": "North Unity Hospital",
+    "lat": 34.87832,
+    "lng": -80.01355,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 24,
+    "ed_current_patients": 24
+  },
+  {
+    "id": "HOSP003",
+    "name": "South Regional Hospital",
+    "lat": 35.12724,
+    "lng": -79.50507,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 12,
+    "ed_current_patients": 12
+  },
+  {
+    "id": "HOSP039",
+    "name": "West Unity Hospital",
+    "lat": 34.66084,
+    "lng": -79.52682,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 37,
+    "ed_current_patients": 37
+  },
+  {
+    "id": "HOSP022",
+    "name": "West River Hospital",
+    "lat": 35.21444,
+    "lng": -79.53621,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 44,
+    "ed_current_patients": 44
+  },
+  {
+    "id": "HOSP048",
+    "name": "North General Hospital",
+    "lat": 35.08947,
+    "lng": -80.34125,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 23,
+    "ed_current_patients": 23
+  },
+  {
+    "id": "HOSP034",
+    "name": "North River Hospital",
+    "lat": 34.51209,
+    "lng": -79.78708,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 35,
+    "ed_current_patients": 35
+  },
+  {
+    "id": "HOSP015",
+    "name": "Central Memorial Hospital",
+    "lat": 35.38005,
+    "lng": -80.34683,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 35,
+    "ed_current_patients": 35
+  },
+  {
+    "id": "HOSP046",
+    "name": "West River Hospital",
+    "lat": 34.96087,
+    "lng": -80.48182,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 42,
+    "ed_current_patients": 42
+  },
+  {
+    "id": "HOSP006",
+    "name": "Central Unity Hospital",
+    "lat": 35.37024,
+    "lng": -80.49462,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 33,
+    "ed_current_patients": 33
+  },
+  {
+    "id": "HOSP029",
+    "name": "East Heights Hospital",
+    "lat": 34.87312,
+    "lng": -80.06173,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 38,
+    "ed_current_patients": 38
+  },
+  {
+    "id": "HOSP035",
+    "name": "East Liberty Hospital",
+    "lat": 35.45891,
+    "lng": -80.33465,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 10,
+    "ed_current_patients": 10
+  },
+  {
+    "id": "HOSP017",
+    "name": "South Heights Hospital",
+    "lat": 35.17074,
+    "lng": -79.5372,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 44,
+    "ed_current_patients": 44
+  },
+  {
+    "id": "HOSP050",
+    "name": "North Liberty Hospital",
+    "lat": 35.13519,
+    "lng": -79.68908,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 16,
+    "ed_current_patients": 16
+  },
+  {
+    "id": "HOSP021",
+    "name": "South County Hospital",
+    "lat": 35.04057,
+    "lng": -79.61961,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 22,
+    "ed_current_patients": 22
+  },
+  {
+    "id": "HOSP044",
+    "name": "South Valley Hospital",
+    "lat": 34.55357,
+    "lng": -80.45522,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 33,
+    "ed_current_patients": 33
+  },
+  {
+    "id": "HOSP019",
+    "name": "South County Hospital",
+    "lat": 34.71324,
+    "lng": -79.63108,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 29,
+    "ed_current_patients": 29
+  },
+  {
+    "id": "HOSP045",
+    "name": "Central County Hospital",
+    "lat": 35.09314,
+    "lng": -79.82586,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": false,
+      "trauma_l1": false,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 15,
+    "ed_current_patients": 15
+  },
+  {
+    "id": "HOSP007",
+    "name": "East City Hospital",
+    "lat": 35.30322,
+    "lng": -79.75426,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 18,
+    "ed_current_patients": 18
+  },
+  {
+    "id": "HOSP030",
+    "name": "South Heights Hospital",
+    "lat": 35.21999,
+    "lng": -79.89544,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 37,
+    "ed_current_patients": 37
+  },
+  {
+    "id": "HOSP002",
+    "name": "North General Hospital",
+    "lat": 35.30731,
+    "lng": -80.38171,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": true,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 22,
+    "ed_current_patients": 22
+  },
+  {
+    "id": "HOSP042",
+    "name": "South County Hospital",
+    "lat": 35.0337,
+    "lng": -80.05526,
+    "capabilities": {
+      "cath_lab": false,
+      "stroke_center": false,
+      "trauma_l1": true,
+      "trauma_l2": false,
+      "pediatric": false
+    },
+    "ed_capacity": 23,
+    "ed_current_patients": 23
+  },
+  {
+    "id": "HOSP040",
+    "name": "Central Liberty Hospital",
+    "lat": 35.31975,
+    "lng": -80.08646,
+    "capabilities": {
+      "cath_lab": true,
+      "stroke_center": true,
+      "trauma_l1": false,
+      "trauma_l2": true,
+      "pediatric": false
+    },
+    "ed_capacity": 47,
+    "ed_current_patients": 47
+  }
+]

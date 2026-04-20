@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AABBCC000000000000000021 /* EMSRoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000020 /* EMSRoutingApp.swift */; };
+		AABBCC000000000000000023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000022 /* ContentView.swift */; };
+		AABBCC000000000000000025 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000024 /* Models.swift */; };
+		AABBCC000000000000000027 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000026 /* APIClient.swift */; };
+		AABBCC000000000000000029 /* RoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000028 /* RoutingView.swift */; };
+		AABBCC000000000000000031 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000030 /* DashboardView.swift */; };
+		AABBCC000000000000000033 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000032 /* SimulationView.swift */; };
+		AABBCC000000000000000035 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000034 /* SpeechManager.swift */; };
+		AABBCC000000000000000037 /* OfflineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000036 /* OfflineRouter.swift */; };
+		AABBCC000000000000000042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000041 /* Assets.xcassets */; };
+		AABBCC000000000000000044 /* hospitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AABBCC000000000000000043 /* hospitals.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AABBCC000000000000000020 /* EMSRoutingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMSRoutingApp.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000022 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000024 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000026 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000028 /* RoutingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingView.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000030 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000032 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000034 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000036 /* OfflineRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineRouter.swift; sourceTree = "<group>"; };
+		AABBCC000000000000000040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABBCC000000000000000041 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AABBCC000000000000000043 /* hospitals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hospitals.json; sourceTree = "<group>"; };
+		AABBCC000000000000000060 /* EMSRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMSRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AABBCC000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AABBCC000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				AABBCC000000000000000050 /* EMSRouting */,
+				AABBCC000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AABBCC000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AABBCC000000000000000060 /* EMSRouting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AABBCC000000000000000050 /* EMSRouting */ = {
+			isa = PBXGroup;
+			children = (
+				AABBCC000000000000000020 /* EMSRoutingApp.swift */,
+				AABBCC000000000000000022 /* ContentView.swift */,
+				AABBCC000000000000000024 /* Models.swift */,
+				AABBCC000000000000000026 /* APIClient.swift */,
+				AABBCC000000000000000028 /* RoutingView.swift */,
+				AABBCC000000000000000030 /* DashboardView.swift */,
+				AABBCC000000000000000032 /* SimulationView.swift */,
+				AABBCC000000000000000034 /* SpeechManager.swift */,
+				AABBCC000000000000000036 /* OfflineRouter.swift */,
+				AABBCC000000000000000041 /* Assets.xcassets */,
+				AABBCC000000000000000043 /* hospitals.json */,
+				AABBCC000000000000000040 /* Info.plist */,
+			);
+			path = EMSRouting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AABBCC000000000000000004 /* EMSRouting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABBCC000000000000000013 /* Build configuration list for PBXNativeTarget "EMSRouting" */;
+			buildPhases = (
+				AABBCC000000000000000005 /* Sources */,
+				AABBCC000000000000000007 /* Frameworks */,
+				AABBCC000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMSRouting;
+			productName = EMSRouting;
+			productReference = AABBCC000000000000000060 /* EMSRouting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AABBCC000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AABBCC000000000000000004 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AABBCC000000000000000012 /* Build configuration list for PBXProject "EMSRouting" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AABBCC000000000000000002;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AABBCC000000000000000004 /* EMSRouting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AABBCC000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABBCC000000000000000042 /* Assets.xcassets in Resources */,
+				AABBCC000000000000000044 /* hospitals.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AABBCC000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABBCC000000000000000021 /* EMSRoutingApp.swift in Sources */,
+				AABBCC000000000000000023 /* ContentView.swift in Sources */,
+				AABBCC000000000000000025 /* Models.swift in Sources */,
+				AABBCC000000000000000027 /* APIClient.swift in Sources */,
+				AABBCC000000000000000029 /* RoutingView.swift in Sources */,
+				AABBCC000000000000000031 /* DashboardView.swift in Sources */,
+				AABBCC000000000000000033 /* SimulationView.swift in Sources */,
+				AABBCC000000000000000035 /* SpeechManager.swift in Sources */,
+				AABBCC000000000000000037 /* OfflineRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AABBCC000000000000000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AABBCC000000000000000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AABBCC000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC3WNV3N8S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EMSRouting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emsrouting.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AABBCC000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC3WNV3N8S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EMSRouting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emsrouting.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AABBCC000000000000000012 /* Build configuration list for PBXProject "EMSRouting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABBCC000000000000000008 /* Debug */,
+				AABBCC000000000000000009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AABBCC000000000000000013 /* Build configuration list for PBXNativeTarget "EMSRouting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABBCC000000000000000010 /* Debug */,
+				AABBCC000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AABBCC000000000000000001 /* Project object */;
+}
