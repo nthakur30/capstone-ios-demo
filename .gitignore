@@ -42,3 +42,6 @@ CLAUDE.md
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# React frontend (removed from tracking)
+frontend/

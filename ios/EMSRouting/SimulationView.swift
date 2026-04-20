@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SimulationView: View {
     @EnvironmentObject var api: APIClient
+    @EnvironmentObject var settings: AppSettings
     @State private var stats: BatchStats?
     @State private var k: Int = 7
     @State private var isRunning = false
@@ -63,6 +64,13 @@ struct SimulationView: View {
                     .cornerRadius(12)
                 }
                 .disabled(isRunning)
+
+                if settings.isOfflineMode {
+                    Label("Simulation requires live backend. Disable Demo Mode to run.", systemImage: "exclamationmark.triangle")
+                        .font(.caption)
+                        .foregroundColor(.orange)
+                        .multilineTextAlignment(.center)
+                }
             }
         }
         .padding(.horizontal)
@@ -133,6 +141,10 @@ struct SimulationView: View {
     }
 
     private func runSimulation() async {
+        guard !settings.isOfflineMode else {
+            errorMessage = "Simulation requires a live backend connection.\nDisable Demo Mode to run."
+            return
+        }
         isRunning = true; errorMessage = nil; stats = nil
         do {
             stats = try await api.runBatchSimulation(k: k)

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DashboardView: View {
     @EnvironmentObject var api: APIClient
+    @EnvironmentObject var settings: AppSettings
     @State private var hospitals: [Hospital] = []
     @State private var isLoading = false
     @State private var isRefreshing = false
@@ -13,7 +14,7 @@ struct DashboardView: View {
                 if isLoading {
                     ProgressView("Loading hospitals…")
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else if let err = errorMessage {
+                } else if let err = errorMessage, !settings.isOfflineMode {
                     VStack(spacing: 12) {
                         Image(systemName: "wifi.slash").font(.largeTitle).foregroundColor(.secondary)
                         Text(err).multilineTextAlignment(.center).foregroundColor(.secondary)
@@ -50,19 +51,28 @@ struct DashboardView: View {
 
     private func load() async {
         isLoading = true; errorMessage = nil
-        do {
-            hospitals = try await api.getHospitals()
-        } catch {
-            errorMessage = "Could not load hospitals.\nCheck backend connection."
+        if settings.isOfflineMode {
+            hospitals = OfflineRouter.shared.hospitals
+        } else {
+            do {
+                hospitals = try await api.getHospitals()
+            } catch {
+                hospitals = OfflineRouter.shared.hospitals
+                errorMessage = "Backend unreachable — showing bundled data."
+            }
         }
         isLoading = false
     }
 
     private func refresh() async {
         isRefreshing = true
-        do {
-            hospitals = try await api.refreshHospitals()
-        } catch {}
+        if settings.isOfflineMode {
+            hospitals = OfflineRouter.shared.hospitals
+        } else {
+            do {
+                hospitals = try await api.refreshHospitals()
+            } catch {}
+        }
         isRefreshing = false
     }
 }

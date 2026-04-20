@@ -9,6 +9,7 @@ private let PRESETS: [(String, ConditionType, Double, Double, Int, Int, Int)] = 
 
 struct RoutingView: View {
     @EnvironmentObject var api: APIClient
+    @EnvironmentObject var settings: AppSettings
     @StateObject private var speech = SpeechManager()
 
     @State private var condition: ConditionType = .STEMI
@@ -33,7 +34,7 @@ struct RoutingView: View {
                     vitalsSection
                     routeButton
                     if isOffline {
-                        Label("Offline mode — routing computed on-device", systemImage: "wifi.slash")
+                        Label("Demo / offline mode — routing computed on-device", systemImage: "wifi.slash")
                             .font(.caption).foregroundColor(.orange)
                             .padding(.horizontal)
                     }
@@ -222,18 +223,25 @@ struct RoutingView: View {
     private func route() async {
         speech.stopListening()
         isLoading = true; errorMessage = nil; isOffline = false
-        do {
-            result = try await api.routeIncident(
-                lat: lat, lng: lng, condition: condition,
-                gcs: Int(gcs), sbp: Int(sbp), rr: Int(rr)
-            )
-        } catch {
-            // Backend unreachable — run routing engine on-device
+        if settings.isOfflineMode {
             result = OfflineRouter.shared.route(
                 lat: lat, lng: lng, condition: condition,
                 gcs: Int(gcs), sbp: Int(sbp), rr: Int(rr)
             )
             isOffline = true
+        } else {
+            do {
+                result = try await api.routeIncident(
+                    lat: lat, lng: lng, condition: condition,
+                    gcs: Int(gcs), sbp: Int(sbp), rr: Int(rr)
+                )
+            } catch {
+                result = OfflineRouter.shared.route(
+                    lat: lat, lng: lng, condition: condition,
+                    gcs: Int(gcs), sbp: Int(sbp), rr: Int(rr)
+                )
+                isOffline = true
+            }
         }
         isLoading = false
     }

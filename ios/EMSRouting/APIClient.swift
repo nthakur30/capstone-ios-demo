@@ -5,7 +5,7 @@ class APIClient: ObservableObject {
     static let shared = APIClient()
 
     // Update to your Mac's WiFi IP when testing on a real device
-    var baseURL = "http://172.20.9.108:8000"
+    var baseURL = "http://localhost:8000"
 
     private let session: URLSession = {
         let config = URLSessionConfiguration.default

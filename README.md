@@ -2,7 +2,7 @@
 
 Georgetown University — Senior Capstone Demo
 
-A full-stack system that demonstrates how an AI-powered multi-agent routing engine outperforms traditional proximity-based EMS dispatch. Given an incident location and patient condition, the system scores every candidate hospital using a **Decision Utility Function (DUF)** and surfaces the medically optimal destination — not just the nearest one.
+A full-stack system demonstrating how an AI-powered multi-agent routing engine outperforms traditional proximity-based EMS dispatch. Given an incident location and patient condition, the system scores every candidate hospital using a **Decision Utility Function (DUF)** and surfaces the medically optimal destination — not just the nearest one.
 
 ---
 
@@ -43,13 +43,16 @@ Software/
 │   ├── services/         # Data loader, stats service
 │   ├── data/             # hospitals.json, incidents.json
 │   └── main.py           # FastAPI app entry point
-├── frontend/             # React + TypeScript + Vite dashboard
-│   └── src/
-│       ├── pages/        # RoutingPage, DashboardPage, SimulationPage
-│       ├── components/   # HospitalCard, RouteMap, AgentTimeline, DUFBarChart, RiskDeltaChart
-│       └── api/          # Typed API client
-└── ios/                  # Native SwiftUI app (EMSRouting)
-    └── EMSRouting/       # ContentView, RoutingView, DashboardView, SimulationView, OfflineRouter
+└── ios/                  # Native SwiftUI app — primary user interface
+    └── EMSRouting/
+        ├── ContentView.swift       # Tab container + offline/live mode toggle
+        ├── RoutingView.swift       # Incident form, AI vs. traditional results, agent timeline
+        ├── DashboardView.swift     # Hospital list with ED metrics
+        ├── SimulationView.swift    # Batch simulation runner + statistics
+        ├── OfflineRouter.swift     # On-device DUF engine (no backend needed)
+        ├── APIClient.swift         # Backend API client (localhost:8000)
+        ├── SpeechManager.swift     # Voice input for vitals
+        └── Models.swift            # Shared data models
 ```
 
 ---
@@ -59,8 +62,7 @@ Software/
 | Layer | Stack |
 |---|---|
 | Backend | Python 3.12, FastAPI, Uvicorn, Pydantic v2 |
-| Frontend | React 19, TypeScript, Vite, Tailwind CSS, Recharts, React-Leaflet |
-| iOS | SwiftUI, AVFoundation (speech), offline routing fallback |
+| iOS App | SwiftUI, AVFoundation (speech), URLSession, offline routing |
 
 ---
 
@@ -71,23 +73,17 @@ Software/
 ```bash
 cd backend
 pip install -r requirements.txt
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8000
 # API available at http://localhost:8000
 ```
 
-### Frontend
+### iOS App
 
-```bash
-cd frontend
-npm install
-npm run dev
-# App available at http://localhost:5173
-```
+Open `ios/EMSRouting.xcodeproj` in Xcode and run on a simulator or device.
 
-### iOS
+**Demo / Offline Mode toggle** — visible at the top of every screen. When enabled, all routing runs on-device using the bundled hospitals data and the `OfflineRouter` DUF engine. No backend required.
 
-Open `ios/EMSRouting.xcodeproj` in Xcode and run on a simulator or device.  
-The app connects to the backend at `http://localhost:8000` by default and includes an offline routing fallback.
+When running on a physical device, update `APIClient.baseURL` in `APIClient.swift` to your Mac's local IP address.
 
 ---
 
@@ -95,17 +91,18 @@ The app connects to the backend at `http://localhost:8000` by default and includ
 
 | Method | Path | Description |
 |---|---|---|
-| `POST` | `/route` | Run agentic routing for an incident |
-| `GET` | `/hospitals` | List all hospitals with current metrics |
-| `POST` | `/simulation/run` | Run batch simulation comparing AI vs. traditional routing |
+| `POST` | `/api/route` | Run agentic routing for an incident |
+| `GET` | `/api/hospitals` | List all hospitals with current metrics |
+| `POST` | `/api/simulate/batch` | Run batch simulation comparing AI vs. traditional routing |
+| `GET` | `/api/incidents/random` | Return a random pre-generated incident |
 
 ---
 
 ## Key Features
 
-- **Parallel agent execution** — all three data agents run concurrently via `asyncio.gather`
-- **Agent timeline visualization** — frontend renders per-agent start time and duration
-- **AI vs. Traditional comparison** — side-by-side DUF scores, risk scores, and delta risk
-- **Interactive map** — Leaflet map with hospital markers and incident location
-- **Batch simulation** — run hundreds of incidents and compare aggregate outcomes
-- **iOS offline mode** — `OfflineRouter.swift` provides local routing when backend is unreachable
+- **Offline / Demo Mode** — full DUF scoring runs on-device with no backend; toggle at the top of the app
+- **Parallel agent execution** — three data agents run concurrently via `asyncio.gather` on the backend
+- **Voice input** — speak patient vitals directly into the routing form
+- **AI vs. Traditional comparison** — side-by-side recommendations with delta risk score
+- **Agent timeline** — visualizes per-agent start time and duration
+- **Batch simulation** — 500-case paired t-test comparing AI vs. traditional aggregate outcomes
